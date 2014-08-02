@@ -11,5 +11,15 @@
 @interface AppDelegate : NSObject <NSApplicationDelegate>
 
 @property (assign) IBOutlet NSWindow *window;
+@property (weak) IBOutlet NSTextField *origin;
+@property (weak) IBOutlet NSTextField *destination;
+@property (weak) IBOutlet NSButton *getButton;
+@property (weak) IBOutlet NSTextField *driveDistance;
+@property (weak) IBOutlet NSTextField *transitTime;
+@property (weak) IBOutlet NSTextField *bathRoom;
+@property (weak) IBOutlet NSTextField *isApartment;
+@property (weak) IBOutlet NSTextField *rentFee;
+
+- (IBAction)get:(id)sender;
 
 @end

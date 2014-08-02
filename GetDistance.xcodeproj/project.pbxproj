@@ -389,6 +389,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GetDistance/GetDistance-Prefix.pch";
 				INFOPLIST_FILE = "GetDistance/GetDistance-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -402,6 +403,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GetDistance/GetDistance-Prefix.pch";
 				INFOPLIST_FILE = "GetDistance/GetDistance-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -466,6 +468,7 @@
 				1BEDDD3E198D7C5F0006167D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1BEDDD3F198D7C5F0006167D /* Build configuration list for PBXNativeTarget "GetDistanceTests" */ = {
 			isa = XCConfigurationList;
@@ -474,6 +477,7 @@
 				1BEDDD41198D7C5F0006167D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
