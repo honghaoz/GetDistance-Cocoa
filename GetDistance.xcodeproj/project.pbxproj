@@ -1,0 +1,481 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1BEDDD0F198D7C5F0006167D /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BEDDD0E198D7C5F0006167D /* Cocoa.framework */; };
+		1BEDDD19198D7C5F0006167D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1BEDDD17198D7C5F0006167D /* InfoPlist.strings */; };
+		1BEDDD1B198D7C5F0006167D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BEDDD1A198D7C5F0006167D /* main.m */; };
+		1BEDDD1F198D7C5F0006167D /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 1BEDDD1D198D7C5F0006167D /* Credits.rtf */; };
+		1BEDDD22198D7C5F0006167D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BEDDD21198D7C5F0006167D /* AppDelegate.m */; };
+		1BEDDD25198D7C5F0006167D /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1BEDDD23198D7C5F0006167D /* MainMenu.xib */; };
+		1BEDDD27198D7C5F0006167D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1BEDDD26198D7C5F0006167D /* Images.xcassets */; };
+		1BEDDD2E198D7C5F0006167D /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BEDDD2D198D7C5F0006167D /* XCTest.framework */; };
+		1BEDDD2F198D7C5F0006167D /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BEDDD0E198D7C5F0006167D /* Cocoa.framework */; };
+		1BEDDD37198D7C5F0006167D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1BEDDD35198D7C5F0006167D /* InfoPlist.strings */; };
+		1BEDDD39198D7C5F0006167D /* GetDistanceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BEDDD38198D7C5F0006167D /* GetDistanceTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1BEDDD30198D7C5F0006167D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1BEDDD03198D7C5F0006167D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1BEDDD0A198D7C5F0006167D;
+			remoteInfo = GetDistance;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1BEDDD0B198D7C5F0006167D /* GetDistance.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GetDistance.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1BEDDD0E198D7C5F0006167D /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		1BEDDD11198D7C5F0006167D /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		1BEDDD12198D7C5F0006167D /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		1BEDDD13198D7C5F0006167D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1BEDDD16198D7C5F0006167D /* GetDistance-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GetDistance-Info.plist"; sourceTree = "<group>"; };
+		1BEDDD18198D7C5F0006167D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1BEDDD1A198D7C5F0006167D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1BEDDD1C198D7C5F0006167D /* GetDistance-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GetDistance-Prefix.pch"; sourceTree = "<group>"; };
+		1BEDDD1E198D7C5F0006167D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		1BEDDD20198D7C5F0006167D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		1BEDDD21198D7C5F0006167D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		1BEDDD24198D7C5F0006167D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		1BEDDD26198D7C5F0006167D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		1BEDDD2C198D7C5F0006167D /* GetDistanceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GetDistanceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1BEDDD2D198D7C5F0006167D /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		1BEDDD34198D7C5F0006167D /* GetDistanceTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GetDistanceTests-Info.plist"; sourceTree = "<group>"; };
+		1BEDDD36198D7C5F0006167D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1BEDDD38198D7C5F0006167D /* GetDistanceTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GetDistanceTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1BEDDD08198D7C5F0006167D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1BEDDD0F198D7C5F0006167D /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1BEDDD29198D7C5F0006167D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1BEDDD2F198D7C5F0006167D /* Cocoa.framework in Frameworks */,
+				1BEDDD2E198D7C5F0006167D /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1BEDDD02198D7C5F0006167D = {
+			isa = PBXGroup;
+			children = (
+				1BEDDD14198D7C5F0006167D /* GetDistance */,
+				1BEDDD32198D7C5F0006167D /* GetDistanceTests */,
+				1BEDDD0D198D7C5F0006167D /* Frameworks */,
+				1BEDDD0C198D7C5F0006167D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1BEDDD0C198D7C5F0006167D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1BEDDD0B198D7C5F0006167D /* GetDistance.app */,
+				1BEDDD2C198D7C5F0006167D /* GetDistanceTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1BEDDD0D198D7C5F0006167D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1BEDDD0E198D7C5F0006167D /* Cocoa.framework */,
+				1BEDDD2D198D7C5F0006167D /* XCTest.framework */,
+				1BEDDD10198D7C5F0006167D /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1BEDDD10198D7C5F0006167D /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1BEDDD11198D7C5F0006167D /* AppKit.framework */,
+				1BEDDD12198D7C5F0006167D /* CoreData.framework */,
+				1BEDDD13198D7C5F0006167D /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		1BEDDD14198D7C5F0006167D /* GetDistance */ = {
+			isa = PBXGroup;
+			children = (
+				1BEDDD20198D7C5F0006167D /* AppDelegate.h */,
+				1BEDDD21198D7C5F0006167D /* AppDelegate.m */,
+				1BEDDD23198D7C5F0006167D /* MainMenu.xib */,
+				1BEDDD26198D7C5F0006167D /* Images.xcassets */,
+				1BEDDD15198D7C5F0006167D /* Supporting Files */,
+			);
+			path = GetDistance;
+			sourceTree = "<group>";
+		};
+		1BEDDD15198D7C5F0006167D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1BEDDD16198D7C5F0006167D /* GetDistance-Info.plist */,
+				1BEDDD17198D7C5F0006167D /* InfoPlist.strings */,
+				1BEDDD1A198D7C5F0006167D /* main.m */,
+				1BEDDD1C198D7C5F0006167D /* GetDistance-Prefix.pch */,
+				1BEDDD1D198D7C5F0006167D /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1BEDDD32198D7C5F0006167D /* GetDistanceTests */ = {
+			isa = PBXGroup;
+			children = (
+				1BEDDD38198D7C5F0006167D /* GetDistanceTests.m */,
+				1BEDDD33198D7C5F0006167D /* Supporting Files */,
+			);
+			path = GetDistanceTests;
+			sourceTree = "<group>";
+		};
+		1BEDDD33198D7C5F0006167D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1BEDDD34198D7C5F0006167D /* GetDistanceTests-Info.plist */,
+				1BEDDD35198D7C5F0006167D /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1BEDDD0A198D7C5F0006167D /* GetDistance */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1BEDDD3C198D7C5F0006167D /* Build configuration list for PBXNativeTarget "GetDistance" */;
+			buildPhases = (
+				1BEDDD07198D7C5F0006167D /* Sources */,
+				1BEDDD08198D7C5F0006167D /* Frameworks */,
+				1BEDDD09198D7C5F0006167D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GetDistance;
+			productName = GetDistance;
+			productReference = 1BEDDD0B198D7C5F0006167D /* GetDistance.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1BEDDD2B198D7C5F0006167D /* GetDistanceTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1BEDDD3F198D7C5F0006167D /* Build configuration list for PBXNativeTarget "GetDistanceTests" */;
+			buildPhases = (
+				1BEDDD28198D7C5F0006167D /* Sources */,
+				1BEDDD29198D7C5F0006167D /* Frameworks */,
+				1BEDDD2A198D7C5F0006167D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1BEDDD31198D7C5F0006167D /* PBXTargetDependency */,
+			);
+			name = GetDistanceTests;
+			productName = GetDistanceTests;
+			productReference = 1BEDDD2C198D7C5F0006167D /* GetDistanceTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1BEDDD03198D7C5F0006167D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "org-honghao";
+				TargetAttributes = {
+					1BEDDD2B198D7C5F0006167D = {
+						TestTargetID = 1BEDDD0A198D7C5F0006167D;
+					};
+				};
+			};
+			buildConfigurationList = 1BEDDD06198D7C5F0006167D /* Build configuration list for PBXProject "GetDistance" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1BEDDD02198D7C5F0006167D;
+			productRefGroup = 1BEDDD0C198D7C5F0006167D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1BEDDD0A198D7C5F0006167D /* GetDistance */,
+				1BEDDD2B198D7C5F0006167D /* GetDistanceTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1BEDDD09198D7C5F0006167D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1BEDDD19198D7C5F0006167D /* InfoPlist.strings in Resources */,
+				1BEDDD27198D7C5F0006167D /* Images.xcassets in Resources */,
+				1BEDDD1F198D7C5F0006167D /* Credits.rtf in Resources */,
+				1BEDDD25198D7C5F0006167D /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1BEDDD2A198D7C5F0006167D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1BEDDD37198D7C5F0006167D /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1BEDDD07198D7C5F0006167D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1BEDDD22198D7C5F0006167D /* AppDelegate.m in Sources */,
+				1BEDDD1B198D7C5F0006167D /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1BEDDD28198D7C5F0006167D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1BEDDD39198D7C5F0006167D /* GetDistanceTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1BEDDD31198D7C5F0006167D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1BEDDD0A198D7C5F0006167D /* GetDistance */;
+			targetProxy = 1BEDDD30198D7C5F0006167D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1BEDDD17198D7C5F0006167D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1BEDDD18198D7C5F0006167D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		1BEDDD1D198D7C5F0006167D /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1BEDDD1E198D7C5F0006167D /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		1BEDDD23198D7C5F0006167D /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1BEDDD24198D7C5F0006167D /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		1BEDDD35198D7C5F0006167D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1BEDDD36198D7C5F0006167D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1BEDDD3A198D7C5F0006167D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		1BEDDD3B198D7C5F0006167D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		1BEDDD3D198D7C5F0006167D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GetDistance/GetDistance-Prefix.pch";
+				INFOPLIST_FILE = "GetDistance/GetDistance-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		1BEDDD3E198D7C5F0006167D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GetDistance/GetDistance-Prefix.pch";
+				INFOPLIST_FILE = "GetDistance/GetDistance-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		1BEDDD40198D7C5F0006167D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/GetDistance.app/Contents/MacOS/GetDistance";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GetDistance/GetDistance-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "GetDistanceTests/GetDistanceTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		1BEDDD41198D7C5F0006167D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/GetDistance.app/Contents/MacOS/GetDistance";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GetDistance/GetDistance-Prefix.pch";
+				INFOPLIST_FILE = "GetDistanceTests/GetDistanceTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1BEDDD06198D7C5F0006167D /* Build configuration list for PBXProject "GetDistance" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1BEDDD3A198D7C5F0006167D /* Debug */,
+				1BEDDD3B198D7C5F0006167D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1BEDDD3C198D7C5F0006167D /* Build configuration list for PBXNativeTarget "GetDistance" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1BEDDD3D198D7C5F0006167D /* Debug */,
+				1BEDDD3E198D7C5F0006167D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1BEDDD3F198D7C5F0006167D /* Build configuration list for PBXNativeTarget "GetDistanceTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1BEDDD40198D7C5F0006167D /* Debug */,
+				1BEDDD41198D7C5F0006167D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1BEDDD03198D7C5F0006167D /* Project object */;
+}
