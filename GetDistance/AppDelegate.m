@@ -121,7 +121,10 @@
 }
 - (IBAction)textFieldSelceted:(id)sender {
     NSLog(@"sadasd");
-//    NSTextField *textField = (NSTextField *)sender;
+    NSTextField *textField = (NSTextField *)sender;
+    if ([textField isEqualTo:_resultTextField]) {
+        return;
+    }
     [self simulateSelectAll];
 //    [textField becomeFirstResponder];
 //    NSRange range = {0, 2};
