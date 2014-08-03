@@ -19,6 +19,7 @@
 @property (weak) IBOutlet NSTextField *bathRoom;
 @property (weak) IBOutlet NSTextField *isApartment;
 @property (weak) IBOutlet NSTextField *rentFee;
+@property (weak) IBOutlet NSTextField *resultTextField;
 
 - (IBAction)get:(id)sender;
 

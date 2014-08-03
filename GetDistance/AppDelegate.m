@@ -8,6 +8,10 @@
 
 #import "AppDelegate.h"
 
+@interface AppDelegate() <NSTextFieldDelegate>
+
+@end
+
 @implementation AppDelegate {
     NSString *key;
     NSString *baseURL;
@@ -23,12 +27,24 @@
 //    https://maps.googleapis.com/maps/api/directions/json?alternatives=true&origin=N2L3G1&destination=N2L3E6&sensor=false&key=AIzaSyDftpY3fi6x_TL4rntL8pgZb-A8mf6D0Ss
     
     pasteboard = [NSPasteboard generalPasteboard];
+    _origin.delegate = self;
+    _destination.delegate = self;
+    _driveDistance.delegate = self;
+    _driveDistance.selectable = YES;
+    _transitTime.delegate = self;
+    _transitTime.selectable = YES;
+    _bathRoom.delegate = self;
+    _isApartment.delegate = self;
+    _rentFee.delegate = self;
+    
+    [_destination becomeFirstResponder];
 }
 
 - (IBAction)get:(id)sender {
     checker = 0;
     [_driveDistance setStringValue:@""];
     [_transitTime setStringValue:@""];
+    [_resultTextField setStringValue:@""];
     NSString *origin = [self urlEncodeString:_origin.stringValue];
     NSString *desination = [self urlEncodeString:_destination.stringValue];
     NSString *requestURLstring = [NSString stringWithFormat:baseURL, origin, desination, key, @"driving"];
@@ -99,7 +115,42 @@
         [pasteboard clearContents];
         NSString *pasteString = [NSString stringWithFormat:@"%.1f %.0f %@ %@ %@", [self getNumberFromString:_driveDistance.stringValue], [self getNumberFromString:_transitTime.stringValue], _bathRoom.stringValue, _isApartment.stringValue, _rentFee.stringValue];
         [pasteboard writeObjects:@[pasteString]];
+        [_resultTextField setStringValue:pasteString];
+        [_resultTextField becomeFirstResponder];
     }
+}
+- (IBAction)textFieldSelceted:(id)sender {
+    NSLog(@"sadasd");
+//    NSTextField *textField = (NSTextField *)sender;
+    [self simulateSelectAll];
+//    [textField becomeFirstResponder];
+//    NSRange range = {0, 2};
+//    [textField selectText:nil];
+//    [sender performSelector:@selector(selectText:) withObject:nil afterDelay:0];
+//    NSText* textEditor = [self.window fieldEditor:YES forObject:textField];
+//    NSRange range = {0, 2};
+//    [textEditor setSelectedRange:range];
+    
+//    [textField selectText:nil];
+}
+
+- (void)simulateSelectAll {
+    CGEventSourceRef source = CGEventSourceCreate(kCGEventSourceStateCombinedSessionState);
+    
+    CGEventRef pressDownCommand_S = CGEventCreateKeyboardEvent(source, (CGKeyCode)0, YES);
+    CGEventSetFlags(pressDownCommand_S, kCGEventFlagMaskCommand);
+    CGEventRef pressUpS = CGEventCreateKeyboardEvent(source, (CGKeyCode)0, NO);
+    
+    CGEventPost(kCGAnnotatedSessionEventTap, pressDownCommand_S);
+    CGEventPost(kCGAnnotatedSessionEventTap, pressUpS);
+    
+    CFRelease(pressUpS);
+    CFRelease(pressDownCommand_S);
+    CFRelease(source);
+}
+
+- (BOOL)applicationShouldTerminateAfterLastWindowClosed:(NSApplication *)sender {
+    return YES;
 }
 
 @end
